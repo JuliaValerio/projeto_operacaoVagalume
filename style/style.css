@@ -88,7 +88,7 @@ button {
   cursor: pointer;
 }
 
-@media (max-width: 800px) {
+@media screen and (max-width: 600px) {
   .navbar {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -228,27 +228,82 @@ button {
   display: block;
 }
 
-/* START BANNER SECTION*/
-.banner-home {
+/* START SLIDER BANNER SECTION*/
+.slide {
   position: relative;
+}
+
+.my-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.tns-nav {
+  padding: 20px;
+  position: relative;
+  text-align: center;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.tns-outer {
+  margin: 0 auto;
+}
+
+.tns-horizontal.tns-subpixel > .tns-item {
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  white-space: normal;
+}
+
+.tns-outer {
+  padding: 0 !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.tns-outer [data-action] {
+  display: none;
+}
+
+.tns-nav > button {
+  width: 9px;
+  height: 9px;
+  padding: 0;
+  margin: 0 5px;
+  border-radius: 50%;
+  background: #ddd;
+  border: 0;
 }
 
 .arrow__navegation--banner {
   position: absolute;
-  top: 50%;
-  width: 99%;
+  top: 35%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  opacity: .5;
 }
 
 .slide__item_1 {
   background-image: url(../../img/palhacos.jpg);
-  background-size: cover;
   background-repeat: no-repeat;
+  background-size: cover;
   padding: 50px 0;
   height: 500px;
   width: 100%;
@@ -273,9 +328,10 @@ button {
 }
 
 .slide__item_1 h2 {
-  text-align: justify;
+  text-align: center;
   padding: 0 10% 1%;
   text-shadow: 0px 0px 15px rgba(2, 2, 2, 0.877);
+  font-size: 22px;
 }
 
 .slide__item_2 {
@@ -306,9 +362,10 @@ button {
 }
 
 .slide__item_2 h2 {
-  text-align: justify;
+  text-align: center;
   padding: 0 10% 1%;
   text-shadow: 0px 0px 15px rgba(2, 2, 2, 0.877);
+  font-size: 22px;
 }
 
 .slide__item_3 {
@@ -339,9 +396,10 @@ button {
 }
 
 .slide__item_3 h2 {
-  text-align: justify;
+  text-align: center;
   padding: 0 10% 1%;
   text-shadow: 0px 0px 15px rgba(2, 2, 2, 0.877);
+  font-size: 22px;
 }
 
 @media screen and (max-width: 600px) {
@@ -366,7 +424,7 @@ button {
   }
   .slide__item_1 h1 {
     padding: 5% 0 2%;
-    font-size: 26px;
+    font-size: 32px;
     text-shadow: 0px 0px 15px rgba(2, 2, 2, 0.877);
     text-transform: uppercase;
   }
@@ -374,7 +432,7 @@ button {
     text-align: justify;
     padding: 5% 16% 1%;
     text-shadow: 0px 0px 15px rgba(2, 2, 2, 0.877);
-    font-size: 18px;
+    font-size: 22px;
   }
   .slide__item_2 {
     background-image: url(../../img/corredores_hospitalegre.jpg);
@@ -397,7 +455,7 @@ button {
   }
   .slide__item_2 h1 {
     padding: 5% 0 2%;
-    font-size: 26px;
+    font-size: 32px;
     text-shadow: 0px 0px 15px rgba(2, 2, 2, 0.877);
     text-transform: uppercase;
   }
@@ -405,7 +463,7 @@ button {
     text-align: justify;
     padding: 5% 16% 1%;
     text-shadow: 0px 0px 15px rgba(2, 2, 2, 0.877);
-    font-size: 18px;
+    font-size: 22px;
   }
   .slide__item_3 {
     background-image: url(../../img/palhacos2.jpg);
@@ -428,7 +486,7 @@ button {
   }
   .slide__item_3 h1 {
     padding: 5% 0 2%;
-    font-size: 26px;
+    font-size: 32px;
     text-shadow: 0px 0px 15px rgba(2, 2, 2, 0.877);
     text-transform: uppercase;
   }
@@ -436,12 +494,162 @@ button {
     text-align: justify;
     padding: 5% 16% 1%;
     text-shadow: 0px 0px 15px rgba(2, 2, 2, 0.877);
-    font-size: 18px;
+    font-size: 22px;
   }
 }
 
-/* END BANNER SECTION*/
+/* END SLIDER BANNER SECTION*/
 /* START presentation SECTION*/
+.presentation {
+  margin: 0 auto;
+  width: 90%;
+  padding: 3%;
+}
+
+.presentation__title {
+  margin: 5%;
+  text-align: center;
+  color: #cb0808;
+  font-weight: bold;
+}
+
+.presentation__title p {
+  font-size: 22px;
+}
+
+.presentation__container {
+  margin: 0 auto;
+  padding: 5%;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: bold;
+}
+
+.presentation__container h3 {
+  font-size: 32px;
+  color: #47b1b8;
+}
+
+.presentation__container p {
+  font-size: 22px;
+  color: #6c6c70;
+}
+
+.presentation__container img {
+  width: 40%;
+}
+
+.presentation__text {
+  width: 40%;
+  margin: 30px;
+  height: 300px;
+}
+
+@media screen and (max-width: 650px) {
+  .presentation__container {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-weight: bold;
+  }
+  .presentation__container h3 {
+    font-size: 32px;
+    color: #47b1b8;
+    width: 100%;
+  }
+  .presentation__container p {
+    font-size: 22px;
+    color: #6c6c70;
+    width: 100%;
+  }
+  .presentation__container img {
+    display: none;
+  }
+  .presentation__text {
+    width: 100%;
+    margin: 30px;
+    height: 300px;
+  }
+}
+
+/* END presentation SECTION*/
+/* START objective SECTION*/
+.objective {
+  margin: 0 auto;
+  width: 90%;
+  padding: 3%;
+}
+
+.title-objective {
+  color: #47b1b8;
+  font-size: 32px;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.subtitle-objective {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  line-height: 1.55;
+  padding-bottom: 5%;
+  font-size: 22px;
+  color: #6c6c70;
+}
+
+.img-slide {
+  height: 200px;
+}
+
+.txt-img {
+  width: 65%;
+  margin: 0 auto;
+  padding: 20px 0px;
+  color: #6c6c70;
+  font-size: 22px;
+}
+
+.title-img {
+  font-weight: bold;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  padding-top: 10px;
+  color: #47b1b8;
+  font-size: 22px;
+}
+
+.secondArrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 30%;
+  width: 100%;
+}
+
 footer {
   background-color: #e07070;
   min-height: 20px;

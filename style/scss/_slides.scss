@@ -1,0 +1,220 @@
+
+/* START SLIDER BANNER SECTION*/
+
+.slide {
+    position: relative;
+}
+
+.my-slider {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tns-nav {
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    order: 2;
+}
+
+.tns-outer {
+    margin: 0 auto;
+}
+
+.tns-horizontal.tns-subpixel>.tns-item {
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    white-space: normal;
+}
+
+.tns-outer {
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+}
+
+.tns-outer [data-action] {
+    display: none;
+}
+
+.tns-nav > button {
+    width: 9px;
+    height: 9px;
+    padding: 0;
+    margin: 0 5px;
+    border-radius: 50%;
+    background: #ddd;
+    border: 0;
+}
+
+.arrow__navegation--banner {
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    opacity: .5;
+}
+
+
+.slide__item_1{
+    background-image: url(../../img/palhacos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+    height: 500px;
+    width: 100%;
+    @include flex(center,center);
+    text-align: center;
+    color: $color-tertiary;
+
+    h1{
+        padding: 5% 0 2%;
+        font-size: $font-size-title;
+        text-shadow: 0px 0px 15px rgba(2, 2, 2, 0.877);
+        text-transform: uppercase;
+    }
+
+    h2{
+        text-align: center;
+        padding: 0 10% 1%;
+        text-shadow: 0px 0px 15px rgba(2, 2, 2, 0.877);
+        font-size: $font-size-text;
+    }
+}
+
+.slide__item_2{
+    background-image: url(../../img/corredores_hospitalegre.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+    height: 500px;
+    width: 100%;
+    @include flex(center,center);
+    text-align: center;
+    color: $color-tertiary;
+    
+    h1{
+        padding: 5% 0 2%;
+        font-size: $font-size-title;
+        text-shadow: 0px 0px 15px rgba(2, 2, 2, 0.877);
+        text-transform: uppercase;
+    }
+
+    h2{
+        text-align: center;
+        padding: 0 10% 1%;
+        text-shadow: 0px 0px 15px rgba(2, 2, 2, 0.877);
+        font-size: $font-size-text;
+    }
+    }
+
+.slide__item_3{
+    background-image: url(../../img/palhacos2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+    height: 500px;
+    width: 100%;
+    @include flex(center,center);
+    text-align: center;
+    color: $color-tertiary;
+
+    h1{
+        padding: 5% 0 2%;
+        font-size: $font-size-title;
+        text-shadow: 0px 0px 15px rgba(2, 2, 2, 0.877);
+        text-transform: uppercase;
+    }
+
+    h2{
+        text-align: center;
+        padding: 0 10% 1%;
+        text-shadow: 0px 0px 15px rgba(2, 2, 2, 0.877);
+        font-size: $font-size-text;
+    }
+    }
+
+@media screen and (max-width: 600px) {
+
+.slide__item_1{
+    background-image: url(../../img/palhacos.jpg);
+    background-size: 450px 500px;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+    height: 500px;
+    width: 100%;
+    @include flex(center,center);
+    text-align: center;
+    color: $color-tertiary;
+
+    h1{
+        padding: 5% 0 2%;
+        font-size: $font-size-title;
+        text-shadow: 0px 0px 15px rgba(2, 2, 2, 0.877);
+        text-transform: uppercase;
+    }
+
+    h2{
+        text-align: justify;
+        padding: 5% 16% 1%;
+        text-shadow: 0px 0px 15px rgba(2, 2, 2, 0.877);
+        font-size: $font-size-text;
+    }
+}
+
+.slide__item_2{
+    background-image: url(../../img/corredores_hospitalegre.jpg);
+    background-size: 450px 500px;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+    height: 500px;
+    width: 100%;
+    @include flex(center,center);
+    text-align: center;
+    color: $color-tertiary;
+    
+    h1{
+        padding: 5% 0 2%;
+        font-size: $font-size-title;
+        text-shadow: 0px 0px 15px rgba(2, 2, 2, 0.877);
+        text-transform: uppercase;
+    }
+
+    h2{
+        text-align: justify;
+        padding: 5% 16% 1%;
+        text-shadow: 0px 0px 15px rgba(2, 2, 2, 0.877);
+        font-size: $font-size-text;
+    }
+    }
+
+.slide__item_3{
+    background-image: url(../../img/palhacos2.jpg);
+    background-size: 450px 500px;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+    height: 500px;
+    width: 100%;
+    @include flex(center,center);
+    text-align: center;
+    color: $color-tertiary;
+
+    h1{
+        padding: 5% 0 2%;
+        font-size:$font-size-title;
+        text-shadow: 0px 0px 15px rgba(2, 2, 2, 0.877);
+        text-transform: uppercase;
+    }
+
+    h2{
+        text-align: justify;
+        padding: 5% 16% 1%;
+        text-shadow: 0px 0px 15px rgba(2, 2, 2, 0.877);
+        font-size: $font-size-text;
+    }
+    }
+    
+    }                     
+    /* END SLIDER BANNER SECTION*/
