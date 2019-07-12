@@ -1,3 +1,17 @@
+window.addEventListener("scroll", function(){
+
+  const bgNav = document.querySelector('nav');
+  
+  if (pageYOffset >= 50) {
+    bgNav.classList.remove("navbar")
+    bgNav.classList.add("navbar_script")
+  }
+  if (pageYOffset < 49){
+    bgNav.classList.add("navbar")
+    bgNav.classList.remove("navbar_script")
+  } 
+});
+
 let slider = tns({
     container: '.my-slider',
     items: 1,
