@@ -15,14 +15,13 @@
 .navbar_script{
   display:flex;
   justify-content: space-around;
-  background: $color-primary;
-  opacity: .6;
+  background-image: linear-gradient(#f16464, rgb(235, 153, 77));
   align-items: center;
   box-shadow: 0px 0px 15px rgba(8, 8, 8, 0.877);
   position: fixed;
   z-index: 99;
   width: 100vw;
-  height: 11vh;
+  height: 15vh;
   top: 0;
   left: 0;
   right: 0;
@@ -57,18 +56,24 @@
 }
 
 /*nav responsive */
-.container {
+.nav-mobile {
   display: none;
   cursor: pointer;
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 575px){
   .navbar{
     justify-content: start;
     padding: 1em;
   }
-  .container {
+
+  .navbar_script{
+    justify-content: start;
+    padding: 1em;
+  }
+
+  .nav-mobile{
     display: inline-block;
   }
   .menu-list{
